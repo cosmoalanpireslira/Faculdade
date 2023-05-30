@@ -6,10 +6,10 @@
 <body>
   <?php
   // Dados do aluno
-  $nome = $_POST['nome'];
-  $matricula = $_POST['matricula'];
-  $semestre = $_POST['semestre'];
-  $turma = $_POST['turma'];
+  $nome = isset($_POST['nome']) ? $_POST['nome'] : "";
+  $matricula = isset($_POST['matricula']) ? $_POST['matricula'] : "";
+  $semestre = isset($_POST['semestre']) ? $_POST['semestre'] : "";
+  $turma = isset($_POST['turma']) ? $_POST['turma'] : "";
 
   // Conexão com o banco de dados (substitua pelos seus próprios dados)
   $servername = "localhost";
@@ -36,4 +36,3 @@
   ?>
 </body>
 </html>
-
