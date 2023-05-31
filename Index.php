@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sistema de Faculdade</title>
+    <title>Sistema de Faculdade</title>
 </head>
 <body>
-  <h1>Sistema de Faculdade</h1>
-
-  <form action="cadastro.php" method="POST">
-    <h2>Cadastro de Aluno</h2>
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" required><br>
-
-    <label for="matricula">Matrícula:</label>
-    <input type="text" name="matricula" required><br>
-
-    <label for="semestre">Semestre:</label>
-    <input type="text" name="semestre" required><br>
-
-    <label for="turma">Turma:</label>
-    <select name="turma" required>
-      <option value="TI">TI</option>
-      <option value="ADS">ADS</option>
-      <option value="Engenharia">Engenharia</option>
-      <option value="Estatística">Estatística</option>
-    </select><br>
-
-    <input type="submit" value="Cadastrar">
-  </form>
+    <h1>Login do Aluno</h1>
+    <form method="POST" action="login.php">
+        <label for="matricula">Matrícula:</label>
+        <input type="text" name="matricula" id="matricula" required>
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        <br><br>
+        <input type="submit" value="Entrar">
+    </form>
 </body>
 </html>
+
 
